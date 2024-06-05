@@ -1,0 +1,40 @@
+/* src/pages/Home.css */
+
+/* Ensure IonPage takes the full height of the viewport */
+.ion-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ion-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add padding and color to the content */
+  .ion-padding {
+    padding: 16px;
+    /* color: var(--ion-color-dark); */
+  }
+  
+  h1 {
+    color: var(--ion-color-primary);
+  }
+
+  ion-backdrop {
+    --backdrop-opacity: 0.8; /* Set opacity for the backdrop */
+    --ion-backdrop-color: rgba(0, 0, 0, 0.5); /* Example: semi-transparent black */
+  }
+
+  ion-menu {
+    ion-backdrop {
+      --backdrop-opacity: 0; /* Set opacity to 0 to remove the overlay */
+    }
+  }
+
+  .safe-top {
+    margin-top: 100px;
+  }
+
